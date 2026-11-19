@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <title>Lâmina das Sombras</title>
+  <style>
+    html, body { margin: 0; height: 100%; background: #0d0b12; overflow: hidden; touch-action: none; }
+    #game { position: fixed; inset: 0; }
+    #rot { display: none; position: fixed; inset: 0; z-index: 9; background: #0d0b12; color: #ece6df;
+           font: 18px system-ui, sans-serif; align-items: center; justify-content: center; text-align: center; }
+    @media (orientation: portrait) { #rot { display: flex; } }
+  </style>
+</head>
+<body>
+  <div id="game"></div>
+  <div id="rot">Gire o aparelho para a horizontal ↻</div>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>
